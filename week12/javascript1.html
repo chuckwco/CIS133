@@ -38,10 +38,27 @@
     <div id="celebrity">Mark Rober</div>
     <table>
         <tr>
-            <td><button>Change Title</button></td>
-            <td><button>Change Name</button></td>
-            <td><button>Change Color</button></td>
+            <td><button onclick="changePage()">Change Title</button></td>
+            <td><button onclick="changePerson()">Change Name</button></td>
+            <td><button onclick="changeColor()">Change Color</button></td>
         </tr>
     </table>
 </body>
+<script>
+    function changePage() {
+        var strTitle = window.prompt('what is the title of this page?');
+        document.title = strTitle
+    }
+
+    function changePerson() {
+        var strPerson = window.prompt('Who is your favorite YouTuber');
+        document.getElementById('celebrity').innerText = strPerson;
+    }
+
+    function changeColor() {
+        var strColor = window.prompt('What would you like the color to be?');
+        document.body.style.backgroundColor = strColor;
+    }
+
+</script>
 </html>
