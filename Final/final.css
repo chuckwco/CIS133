@@ -1,0 +1,85 @@
+body{
+    background-image: linear-gradient(white,rgb(201, 153, 64));
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#background{
+    background-color: white;
+}
+
+footer{
+    clear:both;
+    font-size: small;
+    text-align: center;
+}
+
+#hikeimg{
+    float: left;
+    width: 50em;
+    margin-right: 20px;
+}
+
+/*menu bar styles*/
+    #pagetitle{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    header{
+        background-color: rgb(65, 175, 164);
+        padding: 20px;
+        height: 150px;
+    }
+
+    #homeimg{
+        width: 100px;
+        margin: 20px;
+        float: left;
+    }
+
+    /*menu*/
+        .menu{
+            text-align: center;
+        }
+
+        nav ul { 
+            list-style-type: none; 
+            display: flex;
+            margin: 0;
+            padding: 0; 
+        }
+
+        nav li { 
+            display:inline;
+            padding: 5px;
+            width: 100%; 
+        }
+
+        nav a{
+            text-decoration: none;
+        }
+
+        #hometab{
+            display: inline;
+        }
+
+/*link styles*/
+    a:link{
+        color: orange;
+    }
+
+    a:hover{
+        color: red;
+    }
+
+    a:visited {
+        color: purple;
+    }
+
+/*media query*/
+    @media screen and (max-width:700px) {
+        #pagetitle{
+            font-size: 20px;
+        }
+    }
